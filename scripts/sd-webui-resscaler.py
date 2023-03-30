@@ -30,10 +30,10 @@ class ResScalerScript(scripts.Script):
     def ui(self, is_img2img):
         with gr.Row(elem_id=f'{"img" if is_img2img else "txt"}2img_row_res_scaler'):
             btns = [
-                RSButton(ar=0.5, value="0.5"),
-                RSButton(ar=0.75, value="0.75"),
-                RSButton(ar=1.5, value="1.5"),
-                RSButton(ar=2, value="2")
+                RSButton(mul=0.5, value="0.5"),
+                RSButton(mul=0.75, value="0.75"),
+                RSButton(mul=1.5, value="1.5"),
+                RSButton(mul=2, value="2")
             ]
 
             with contextlib.suppress(AttributeError):
